@@ -1,0 +1,249 @@
+.product_name {
+    font-size: 2.5em;
+    color: var(--blue-logo);
+}
+
+.product_name.active {
+    color: white;
+    background-color: var(--blue-logo);
+    ;
+}
+
+.product_name {
+    height: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.left_slider {
+    height: 100%;
+    padding: 0;
+}
+
+.count_about_us {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.number_count_about_us {
+    font-size: 6.5em;
+    color: var(--blue-logo);
+    display: inline;
+}
+
+.title_count_about_us {
+    color: var(--red);
+    display: inline;
+}
+
+[data-background]::before {
+    content: attr(data-background);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    font-size: 117px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Rift-Bold";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(98, 98, 98, 0.35);
+    z-index: -1;
+}
+
+.copyright {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 40px;
+    background-color: white;
+    width: 100%;
+}
+
+.box_logo_footer {
+    margin-bottom: 60px;
+    margin-left: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.box_logo_footer img {
+    width: 100%;
+    height: auto;
+}
+
+.address_box img {
+    width: 12px;
+    margin-left: 40px;
+}
+
+.address_box {
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address {
+    margin: 0 10px;
+    color: var(--blue-logo);
+}
+
+.banner_image {
+    margin-top: -86px;
+    width: 100%;
+}
+
+.banner_image img {
+    width: 100%;
+}
+
+.small_box_new,
+.big_box_new {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tabs_contain {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    background-color: transparent;
+    color: var(--blue-logo);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--blue-logo);
+    color: white;
+}
+
+.small_box_new,
+.big_box_new,
+.small_box_new img,
+.big_box_new img {
+    width: 100%;
+}
+
+.big_box_new {
+    height: 660px;
+    overflow: hidden;
+}
+
+.small_box_new {
+    margin-bottom: 30px;
+}
+
+.big_box_title h3 {
+    color: white;
+    font-family: 'SF-Regular';
+    font-size: 2em;
+    transition: 0.5s;
+    margin-bottom: 100px;
+}
+
+.big_box_text {
+    position: absolute;
+    bottom: 0;
+    transition: height .5s;
+    padding: 20px;
+    height: 180px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(95, 95, 95, 0) 0%, #000000 94.06%);
+}
+
+.big_box_new:hover .big_box_text {
+    height: 180px;
+}
+
+/* .big_box_new:hover .big_box_text h3 {
+    margin-bottom: 20px;
+} */
+
+.small_box_title h3 {
+    color: white;
+    font-family: 'SF-Regular';
+    font-size: 1.2em;
+    transition: 0.5s;
+    margin-bottom: 100px;
+}
+
+.small_box_text {
+    position: absolute;
+    bottom: 0;
+    transition: height .5s;
+    padding: 20px;
+    height: 110px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(95, 95, 95, 0) 0%, #000000 94.06%);
+}
+.small_box_new {
+    height: 200px;
+}
+/* .small_box_new:hover .small_box_text {
+    height: 150px;
+} */
+
+/* .small_box_new:hover .small_box_text h3 {
+    margin-bottom: 20px;
+} */
+
+.big_box_content p {
+    color: white;
+}
+
+.small_box_content p {
+    color: white;
+}
+
+
+#sub_menu_item {
+    background-color:#ffffff1f !important;
+    position:absolute !important;
+    top:-1.5rem !important;
+    left:1.5rem !important;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color:#ffffff1f !important;
+}
+
+@media screen and (max-width: 768px) {
+    .address {
+        font-size: 0.8em;
+    }
+
+    .menu_item {
+        font-size: 1.2em;
+        padding: 25px 10px;
+    }
+    .copyright {
+        width: 95%;
+    }
+
+    .big_box_new {
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    .big_box_new h3 {
+        font-size: 1.2em;
+    }
+
+    .number_count_about_us {
+        font-size: 3em;
+        color: var(--blue-logo);
+        display: inline;
+    }
+    [data-background]::before {
+        font-size: 3.2em;
+    }
+}
